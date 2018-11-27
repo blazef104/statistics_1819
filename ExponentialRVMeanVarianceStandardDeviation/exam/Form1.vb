@@ -19,7 +19,7 @@
         Dim AverageForIterations As New List(Of Double)
         'List to save the variance for each iteration
         Dim VarianceForIterations As New List(Of Double)
-
+        Dim StandardDeviationForIterations As New List(Of Double)
         Dim iterations As Integer = Extractions * 100
         Dim average As Double = 0
         Dim variance As Double = 0
@@ -27,6 +27,7 @@
         Dim T As Double
         For j As Integer = 1 To iterations
             average = 0
+            variance = 0
             For i As Integer = 1 To Extractions
                 Dim U As Double = rnd.NextDouble
                 T = -Math.Log(U) / lam
@@ -36,6 +37,7 @@
             average /= Extractions
             variance = Math.Pow(average, 2) * (Extractions - 1)
             VarianceForIterations.Add(variance)
+            StandardDeviationForIterations.Add(Math.Sqrt(variance))
             AverageForIterations.Add(average)
         Next
 
@@ -44,10 +46,12 @@
         Dim valueC1 As Double() = ExtractClasses(50, NumberOfExtractions)
         Dim valueC2 As Double() = ExtractClasses(50, AverageForIterations)
         Dim valueC3 As Double() = ExtractClasses(50, VarianceForIterations)
+        Dim valueC3_1 As Double() = ExtractClasses(50, StandardDeviationForIterations)
         'Drawing part
         Chart1.Series(0).Points.Clear()
         Chart2.Series(0).Points.Clear()
         Chart3.Series(0).Points.Clear()
+        Chart3.Series(1).Points.Clear()
 
         For Each el In valueC1
             Chart1.Series(0).Points.AddXY("", el)
@@ -57,6 +61,9 @@
         Next
         For Each el In valueC3
             Chart3.Series(0).Points.AddXY("", el)
+        Next
+        For Each el In valueC3_1
+            Chart3.Series(1).Points.AddXY("", el)
         Next
 
     End Sub

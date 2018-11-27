@@ -38,8 +38,8 @@
         Dim valueC2 As Double() = ExtractClasses(50, AverageForIterations)
 
         'Drawing part
-        Chart1.Series("Series1").Points.Clear()
-        Chart2.Series("Series1").Points.Clear()
+        Chart1.Series(0).Points.Clear()
+        Chart2.Series(0).Points.Clear()
         For Each el In valueC1
             Chart1.Series("Series1").Points.AddXY("", el)
         Next
