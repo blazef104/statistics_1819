@@ -37,6 +37,8 @@
                     X = b - Math.Sqrt((1 - U) * (b - a) * (b - c))
                 End If
                 NumberOfExtractions.Add(X)
+                Console.WriteLine(X)
+
                 average += X
             Next
             average /= Extractions

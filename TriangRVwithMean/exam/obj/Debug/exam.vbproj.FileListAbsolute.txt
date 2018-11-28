@@ -22,3 +22,15 @@ C:\Users\blaze\Desktop\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.vbproj.Core
 C:\Users\blaze\Desktop\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.exe
 C:\Users\blaze\Desktop\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.xml
 C:\Users\blaze\Desktop\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.pdb
+E:\pre_exam\TriangRVwithMean\exam\bin\Debug\exam.exe.config
+E:\pre_exam\TriangRVwithMean\exam\bin\Debug\exam.exe
+E:\pre_exam\TriangRVwithMean\exam\bin\Debug\exam.pdb
+E:\pre_exam\TriangRVwithMean\exam\bin\Debug\exam.xml
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.vbprojAssemblyReference.cache
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.Form1.resources
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.Resources.resources
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.vbproj.GenerateResource.cache
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.vbproj.CoreCompileInputs.cache
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.exe
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.xml
+E:\pre_exam\TriangRVwithMean\exam\obj\Debug\exam.pdb
